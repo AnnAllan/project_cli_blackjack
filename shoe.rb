@@ -1,34 +1,26 @@
-require_relative
-
-class Shoe
-  def initialize
-    @shoe = create_shoe
-    @cut_card = "%%"
-  end
-
-  def create_shoe
-    shoe_arr = []
-    8.times do
-      shoe_arr << @card.decks
-    end
-    shoe_shuffled = shoe_arr.shuffle
-    shoe_ready = shoe_shuffled.insert(309, @cut_card)
-    return shoe_ready
-  end
-
-  def cut_cards
-    @shoe = []
-    @shoe = Shoe.new
-  end
-
-  def cards_left(shoe)
-    cl = 416 - shoe.length
-    return cl
-  end
-
-  def cards_to_cut(cl)
-    cc = cl - 104
-    return cc
-  end
-
-end
+# require_relative 'card'
+#
+# class Shoe
+#   CUT_LOCATION = 104
+#   attr_reader :shoe_arr
+#   attr_accessor :shoe
+#   def initialize
+#
+#     puts "Creating new shoe"
+#   end
+#
+#   def create_shoe
+#     shoe_cards = []
+#     8.times do
+#       Card.suit_arr.each do |suit|
+#         Card.rank_hash.each do |rank, value|
+#           card = Card.new(rank, suit, value)
+#           shoe_cards << card
+#         end
+#       end
+#     end
+#     shoe_ready = shoe_cards.shuffle
+#     return shoe_ready
+#   end
+#
+# end
